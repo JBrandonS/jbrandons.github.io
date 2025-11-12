@@ -1,1 +1,29 @@
+# Site settings
+title: Brandon Stevenson
+email: your.email@example.com
+description: >-
+  Professional portfolio showcasing my work in software development,
+  projects, and technical expertise.
+baseurl: ""
+url: "https://jbrandons.github.io"
+
+# Build settings
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social media usernames (optional)
+github_username: JBrandonS
+linkedin_username: JBrandonS
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects
+  - title: About
+    url: /#about
+  - title: Contact
+    url: /#contact

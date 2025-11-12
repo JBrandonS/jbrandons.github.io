@@ -8,23 +8,28 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+# Professional Portfolio Website
 
-# Header 1
-## Header 2
-### Header 3
+This is my professional portfolio website built with GitHub Pages and Jekyll.
 
-- Bulleted
-- List
+## Local Development
 
-1. Numbered
-2. List
+To run this site locally:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+bundle install
+bundle exec jekyll serve
 ```
+
+Then visit `http://localhost:4000` in your browser.
+
+## Customization
+
+Edit the `_config.yml` file to update your personal information, social media links, and site settings.
+
+## License
+
+See LICENSE file for details.
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
