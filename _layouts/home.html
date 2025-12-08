@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <!-- Big nav section for home page with CMB background -->
+    <div style="background: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.4)), url('{{ "/assets/imgs/cmb_header.png" | relative_url }}') center/cover no-repeat, #1a1a2e; width: 100%; padding: 4rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+      <h1 style="margin: 0; color: #7ed3d8; font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 0 30px rgba(126, 211, 216, 0.3); letter-spacing: 1px;">{{ site.title | default: site.github.repository_name }}</h1>
+      <p style="margin: 1.5rem 0 2.5rem 0; color: rgba(255, 255, 255, 0.9); font-size: 1.25rem; font-weight: 300; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); max-width: 600px; margin-left: auto; margin-right: auto;">{{ site.description | default: site.github.project_tagline }}</p>
+      
+      <nav style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+        <a href="{{ "/" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Home</a>
+        <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">About</a>
+        <a href="{{ "/research" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Research</a>
+        <!-- <a href="{{ "/projects" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Projects</a> -->
+        <a href="{{ site.github.owner_url }}" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/JBrandonS" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-linkedin"></i></a>
+      </nav>
+    </div>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer" style="margin-top: 4rem; padding: 2rem 0; border-top: 2px solid #e1e4e8; text-align: center; color: #666;">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
