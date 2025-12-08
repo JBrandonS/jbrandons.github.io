@@ -33,6 +33,6 @@ My research interests lie at the intersection of particle physics, machine learn
     <img src="/assets/imgs/cmb_header_small.png" alt="Artificial Intelligence">
     <h3>Artificial Intelligence</h3>
     <p>AI is a transformative force reshaping our understanding of complex systems. My work focuses on developing models that learn from data, adapt to new information, and make predictions that drive scientific discovery.</p>
-    <a href="/ai">Learn more →</a>
+    <a href="/ml">Learn more →</a>
   </div>
 </div>
