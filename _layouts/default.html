@@ -20,7 +20,7 @@
         <a href="{{ "/" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">Home</a>
         <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">About</a>
         <a href="{{ "/research" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">Research</a>
-        <!-- <a href="{{ "/projects" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">Projects</a> -->
+        <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">Publications</a>
         <a href="{{ site.github.owner_url }}" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 0.75rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/JBrandonS" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 0.75rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);"><i class="fab fa-linkedin"></i></a>
       </nav>
@@ -28,10 +28,10 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
-
-      <footer class="site-footer" style="margin-top: 4rem; padding: 2rem 0; border-top: 2px solid #e1e4e8; text-align: center; color: #666;">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}. All rights reserved.</p>
-      </footer>
     </main>
+
+    <footer style="width: 100%; margin-top: 0; padding: 2rem 0; background: #1a1a2e; text-align: center; color: #7ed3d8;">
+      <p style="margin: 0;">&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}. All rights reserved.</p>
+    </footer>
   </body>
 </html>
