@@ -10,6 +10,10 @@ title: Research
 
 Advancing our understanding of the universe through the synergy of physics and computational innovation. My research focuses on leveraging machine learning techniques to tackle complex problems in cosmology and particle physics, aiming to uncover new insights about the fundamental nature of reality.
 
+# TODO
+
+Need to make these 2 or 3 paragraphs. Fix pictures.
+
 # Research
 
 <div class="research-card-horizontal">
