@@ -18,8 +18,24 @@
       <nav style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
         <a href="{{ "/" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Home</a>
         <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">About</a>
-        <a href="{{ "/research" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Research</a>
-        <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Publications</a>
+        
+        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
+          <button class="nav-dropdown-toggle" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: none; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: transparent; cursor: pointer;">Research</button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="{{ "/ml" | relative_url }}">Machine Learning in Physics</a></li>
+            <li><a href="{{ "/png" | relative_url }}">The Early Universe</a></li>
+            <li><a href="{{ "/dis" | relative_url }}">Deep Inelastic Scattering</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
+          <button class="nav-dropdown-toggle" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: none; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: transparent; cursor: pointer;">Publications</button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="{{ "/mlpng" | relative_url }}">Primordial Non-Gaussianity</a></li>
+            <li><a href="{{ "/dali" | relative_url }}">Beyond Fisher Forecasting</a></li>
+          </ul>
+        </div>
+
         <a href="{{ site.github.owner_url }}" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/JBrandonS" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-linkedin"></i></a>
       </nav>
