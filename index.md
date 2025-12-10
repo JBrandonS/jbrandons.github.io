@@ -28,8 +28,9 @@ In a world increasingly shaped by artificial intelligence and data-driven decisi
 ## Research
 
 <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
-  <div style="flex: 0 0 auto;">
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 1rem;">
     <img src="/assets/imgs/got_to_give.jpg" alt="Research" style="max-width: 280px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    <img src="/assets/imgs/qgp.png" alt="Research" style="max-width: 280px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   </div>
   <div style="flex: 1; min-width: 300px;">
     <p>Have you ever wondered how the universe began? What the most fundamental building blocks of matter are? My research delves into the mysteries of the cosmos, exploring the fundamental forces that shaped our existence.</p>

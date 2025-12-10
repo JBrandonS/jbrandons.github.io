@@ -33,11 +33,11 @@ Advancing our understanding of the universe through the synergy of physics and c
   </div>
   <div class="card-content">
     <h3>The Early Universe</h3>
-    <p>Exploring the early universe's conditions that led to the large-scale structure we observe today. By analyzing cosmic microwave background (CMB) data using Machine Learning models, I aim to uncover the statistical properties of primordial fluctuations to levels never before achieved.</p>
+    <p>By analyzing cosmic microwave background data using Machine Learning models, I aim to uncover the statistical properties of primordial fluctuations to levels never before achieved.</p>
     <div class="card-links">
       <a href="/png"><i class="fas fa-book"></i> Read More</a>
-      <a href="https://github.com/JBrandonS/MLPNG"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://github.com/JBrandonS/MLPNG"><i class="fas fa-file-alt"></i> Paper</a>
+      <!-- <a href="https://github.com/JBrandonS/MLPNG"><i class="fab fa-github"></i> GitHub</a> -->
+      <!-- <a href="https://github.com/JBrandonS/MLPNG"><i class="fas fa-file-alt"></i> Paper</a> -->
     </div>
     <div class="card-tech"><strong>Tech:</strong> Python, TensorFlow/Keras, Cython, CAMB, Pixell, LensPyx, HealPy, NumPy/SciPy, Matplotlib</div>
   </div>
@@ -52,8 +52,8 @@ Advancing our understanding of the universe through the synergy of physics and c
     <p>Understanding the structure of matter through Deep Inelastic Scattering (DIS) in the color dipole picture. In this framework, a virtual photon fluctuates into a quark-antiquark dipole that then interacts with the target proton via gluon exchange, revealing the fascinating phenomena of gluon saturation.</p>
     <div class="card-links">
       <a href="/dis"><i class="fas fa-book"></i> Read More</a>
-      <a href="#"><i class="fab fa-github"></i> GitHub</a>
-      <a href="#"><i class="fas fa-file-alt"></i> Paper</a>
+      <!-- <a href="#"><i class="fab fa-github"></i> GitHub</a> -->
+      <!-- <a href="#"><i class="fas fa-file-alt"></i> Paper</a> -->
     </div>
     <div class="card-tech"><strong>Tech:</strong> Python, TensorFlow/Keras, Cython, Fortran, C++, NumPy/SciPy, Matplotlib</div>
   </div>
