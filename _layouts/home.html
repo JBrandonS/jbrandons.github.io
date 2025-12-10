@@ -20,7 +20,7 @@
         <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">About</a>
         
         <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
-          <button class="nav-dropdown-toggle" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: none; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: transparent; cursor: pointer;">Research</button>
+          <a href="{{ "/research" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.6rem 1.5rem; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; display: inline-flex;">Research</a>
           <ul class="nav-dropdown-menu">
             <li><a href="{{ "/ml" | relative_url }}">Machine Learning in Physics</a></li>
             <li><a href="{{ "/png" | relative_url }}">The Early Universe</a></li>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
-          <button class="nav-dropdown-toggle" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: none; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: transparent; cursor: pointer;">Publications</button>
+          <a href="{{ "/publications" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.6rem 1.5rem; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; display: inline-flex;">Publications</a>
           <ul class="nav-dropdown-menu">
             <li><a href="{{ "/mlpng" | relative_url }}">Primordial Non-Gaussianity</a></li>
             <li><a href="{{ "/dali" | relative_url }}">Beyond Fisher Forecasting</a></li>
