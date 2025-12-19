@@ -21,7 +21,6 @@ Advancing our understanding of the universe through the synergy of physics and c
     <p>Developing machine learning models that can learn from physics data, adapt to new information, and make predictions that drive scientific discovery. From improving particle collision simulations to enhancing cosmological data analysis techniques.</p>
     <div class="card-links">
       <a href="/ml"><i class="fas fa-book"></i> Read More</a>
-      <a href="#"><i class="fab fa-github"></i> GitHub</a>
     </div>
     <div class="card-tech"><strong>Tech:</strong> Python, PyTorch, TensorFlow/Keras, scikit-learn, optuna</div>
   </div>
