@@ -19,7 +19,7 @@
   <div style="flex: 0 0 auto; text-align: center;">
     <img src="{{ '/assets/imgs/port.jpg' | relative_url }}" alt="Brandon" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
     <div class="social-links">
-      <a href="{{ '/assets/pdfs/cv.pdf' | relative_url }}" target="_blank" class="cv"><i class="fas fa-file-pdf"></i> CV</a>
+      <a href="{{ '/assets/pdfs/resume.pdf' | relative_url }}" target="_blank" class="cv"><i class="fas fa-file-pdf"></i> Resume</a>
       <a href="https://scholar.google.com/citations?user=j.brandon.s" target="_blank" class="scholar"><i class="fas fa-graduation-cap"></i> Scholar</a>
       <a href="https://orcid.org/0000-0003-3032-3305" target="_blank" class="orcid"><i class="fab fa-orcid"></i> ORCID</a>
     </div>
