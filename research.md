@@ -18,11 +18,10 @@ Advancing our understanding of the universe through the synergy of physics and c
   </div>
   <div class="card-content">
     <h3>Machine Learning in Physics</h3>
-    <p>Developing machine learning models that can learn from physics data, adapt to new information, and make predictions that drive scientific discovery. From improving particle collision simulations to enhancing cosmological data analysis techniques.</p>
+    <p>Teaching computers to find patterns in the universe that humans can't see. By training neural networks on massive physics datasets, we uncover hidden signals in everything from the oldest light in the cosmos to the tiniest particles inside a proton.</p>
     <div class="card-links">
       <a href="/ml"><i class="fas fa-book"></i> Read More</a>
     </div>
-    <div class="card-tech"><strong>Tech:</strong> Python, PyTorch, TensorFlow/Keras, scikit-learn, optuna</div>
   </div>
 </div>
 
@@ -32,13 +31,12 @@ Advancing our understanding of the universe through the synergy of physics and c
   </div>
   <div class="card-content">
     <h3>The Early Universe</h3>
-    <p>By analyzing cosmic microwave background data using Machine Learning models, I aim to uncover the statistical properties of primordial fluctuations to levels never before achieved.</p>
+    <p>The Cosmic Microwave Background is the oldest light in the universe—a baby picture from 380,000 years after the Big Bang. Using neural networks, I search for faint whispers of primordial non-Gaussianity that could reveal what powered cosmic inflation.</p>
     <div class="card-links">
       <a href="/png"><i class="fas fa-book"></i> Read More</a>
       <!-- <a href="https://github.com/JBrandonS/MLPNG"><i class="fab fa-github"></i> GitHub</a> -->
       <!-- <a href="https://github.com/JBrandonS/MLPNG"><i class="fas fa-file-alt"></i> Paper</a> -->
     </div>
-    <div class="card-tech"><strong>Tech:</strong> Python, TensorFlow/Keras, Cython, CAMB, Pixell, LensPyx, HealPy, NumPy/SciPy, Matplotlib</div>
   </div>
 </div>
 
@@ -47,13 +45,12 @@ Advancing our understanding of the universe through the synergy of physics and c
     <img src="/assets/imgs/proton_microscope.jpg" alt="Deep Inelastic Scattering">
   </div>
   <div class="card-content">
-    <h3>Putting the proton under a microscope</h3>
-    <p>Understanding the structure of matter through Deep Inelastic Scattering (DIS) in the color dipole picture. In this framework, a virtual photon fluctuates into a quark-antiquark dipole that then interacts with the target proton via gluon exchange, revealing the fascinating phenomena of gluon saturation.</p>
+    <h3>Putting the Proton Under a Microscope</h3>
+    <p>What's inside a proton? By firing electrons at protons and watching what bounces back, we map the sea of quarks and gluons within. At high energies, gluons crowd together until they saturate—a phenomenon I study using machine learning to analyze scattering data.</p>
     <div class="card-links">
       <a href="/dis"><i class="fas fa-book"></i> Read More</a>
       <!-- <a href="#"><i class="fab fa-github"></i> GitHub</a> -->
       <!-- <a href="#"><i class="fas fa-file-alt"></i> Paper</a> -->
     </div>
-    <div class="card-tech"><strong>Tech:</strong> Python, TensorFlow/Keras, Cython, Fortran, C++, NumPy/SciPy, Matplotlib</div>
   </div>
 </div>
