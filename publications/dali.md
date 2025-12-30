@@ -21,7 +21,7 @@ Our paper introduces a practical test to determine *when* you can trust Fisher f
 
 ## Why Fisher Forecasting Works (Usually)
 
-Imagine you're trying to measure two quantities—say, the expansion rate of the universe ($H_0$) and the amount of dark matter ($$\Omega_m$$). Your measurements will have some uncertainty, and typically you'll find that these uncertainties form an **ellipse** when plotted:
+Imagine you're trying to measure two quantities—say, the expansion rate of the universe ($$H_0$$) and the amount of dark matter ($$\Omega_m$$). Your measurements will have some uncertainty, and typically you'll find that these uncertainties form an **ellipse** when plotted:
 
 <div style="text-align: center; margin: 1.5rem 0;">
   <img src="/assets/imgs/FXCDM_BAO_Exact_Analytic_Fisher_Doublet_partly_filled_plus_curvature.png" alt="Fisher vs DALI contours" style="max-width: 100%; max-height: 400px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
