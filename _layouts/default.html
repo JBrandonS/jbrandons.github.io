@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Compact nav bar for inner pages with CMB background -->
-    <div style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.5)), url('{{ "/assets/imgs/cmb_header_small.png" | relative_url }}') left center/cover no-repeat, #1a1a2e; width: 100%; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+    <div style="background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.5)), url('{{ "/assets/imgs/cmb_header_small.png" | relative_url }}') left center/cover no-repeat, #1a1a2e; width: 100%; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.3); position: relative; z-index: 100;">
       <a href="{{ "/" | relative_url }}" style="text-decoration: none;">
         <h1 style="margin: 0; color: #7ed3d8; font-size: 1.4rem; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); letter-spacing: 0.5px;">{{ site.title | default: site.github.repository_name }}</h1>
       </a>
@@ -21,7 +21,7 @@
         <a href="{{ "/" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">Home</a>
         <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">About</a>
         
-        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px); opacity: 0.9;">
+        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">
           <a href="{{ "/research" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.5rem 1rem; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; display: inline-flex;">Research</a>
           <ul class="nav-dropdown-menu">
             <li><a href="{{ "/research/ml" | relative_url }}">Machine Learning in Physics</a></li>
@@ -30,7 +30,7 @@
           </ul>
         </div>
 
-        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px); opacity: 0.9;">
+        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.5); border-radius: 4px; background: rgba(26, 26, 46, 0.5); backdrop-filter: blur(4px);">
           <a href="{{ "/publications" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.5rem 1rem; transition: all 0.3s; font-size: 0.85rem; font-weight: 500; display: inline-flex;">Publications</a>
           <ul class="nav-dropdown-menu">
             <li><a href="{{ "/publications/dali" | relative_url }}">Beyond Fisher Forecasting</a></li>
