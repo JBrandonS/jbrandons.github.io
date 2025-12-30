@@ -61,9 +61,9 @@ The neural network learns to distinguish between these two classes, effectively 
 
 PNG isn't just one thing—different inflationary models predict different *shapes* of non-Gaussianity:
 
-- **Local PNG ($f_{\rm NL}^{\rm local}$)**: Correlations between modes of very different sizes. Predicted by multi-field inflation models.
-- **Equilateral PNG ($f_{\rm NL}^{\rm equil}$)**: Correlations between modes of similar sizes. Associated with non-standard kinetic terms.
-- **Orthogonal PNG ($f_{\rm NL}^{\rm ortho}$)**: A combination designed to be independent of the above.
+- **Local PNG ($$f_{\rm NL}^{\rm local}$$)**: Correlations between modes of very different sizes. Predicted by multi-field inflation models.
+- **Equilateral PNG ($$f_{\rm NL}^{\rm equil}$$)**: Correlations between modes of similar sizes. Associated with non-standard kinetic terms.
+- **Orthogonal PNG ($$f_{\rm NL}^{\rm ortho}$$)**: A combination designed to be independent of the above.
 
 ---
 
@@ -126,7 +126,6 @@ The ultimate goal is to extract every possible bit of information about the earl
   <a href="/research/png" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-star"></i> The Early Universe</a>
   <a href="/research/ml" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-brain"></i> Machine Learning in Physics</a>
   <a href="https://github.com/JBrandonS/MLPNG" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fab fa-github"></i> GitHub Repository</a>
-  <a href="/publications" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-lines"></i> All Publications</a>
 </div>
 
 ---
