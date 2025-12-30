@@ -16,46 +16,6 @@
     --shadow-hover: 0 4px 16px rgba(26, 26, 46, 0.25);
 }
 
-/* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 4rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    margin: -2rem -2rem 3rem -2rem;
-
-    @media screen and (max-width: 768px) {
-        margin: -1rem -1rem 2rem -1rem;
-        padding: 3rem 1rem;
-    }
-}
-
-.hero-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-
-    @media screen and (max-width: 768px) {
-        font-size: 2rem;
-    }
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-
-    @media screen and (max-width: 768px) {
-        font-size: 1.2rem;
-    }
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 /* Featured Quote */
 .featured-quote {
@@ -66,8 +26,8 @@
     position: relative;
     z-index: 1;
     background: linear-gradient(135deg, rgba(126, 211, 216, 0.05) 0%, rgba(26, 26, 46, 0.03) 100%);
-    border-left: 4px solid var(--secondary-color);
-    border-right: 4px solid var(--secondary-color);
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
     border-radius: 8px;
 
     &::before,
@@ -78,7 +38,6 @@
         opacity: 0.5;
         position: absolute;
         line-height: 1;
-        z-index: 0;
     }
 
     &::before {
@@ -681,7 +640,7 @@ a {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 9999;
+    z-index: 10;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
