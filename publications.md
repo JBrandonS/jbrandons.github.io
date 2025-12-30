@@ -2,7 +2,7 @@
 
 <div class="research-card-horizontal">
   <div class="card-image">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ilc_9yr_moll4096.png/1280px-Ilc_9yr_moll4096.png" alt="CMB temperature fluctuations from WMAP">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/WMAP_2012.png/1280px-WMAP_2012.png" alt="All-sky map of the Cosmic Microwave Background showing temperature fluctuations" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
   </div>
   <div class="card-content">
     <h3>Primordial Non-Gaussianity</h3>
@@ -33,7 +33,7 @@
 
 <div class="research-card-horizontal">
   <div class="card-image">
-    <img src="https://www.bnl.gov/today/body_pics/2020/02/eic-hr.jpg" alt="Electron-Ion Collider at Brookhaven National Laboratory">
+      <img src="https://www.bnl.gov/today/body_pics/2022/08/gluons-saturate-hr.jpg" alt="Illustration showing gluons saturating inside a nucleus accelerated to high energy" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
   </div>
   <div class="card-content">
     <h3>Gluon Saturation</h3>
