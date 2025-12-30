@@ -38,23 +38,6 @@ Understanding gluon saturation helps us answer fundamental questions:
 2. **QCD in Extreme Conditions**: What happens to the strong force at the highest densities?
 3. **Heavy Ion Collisions**: The initial state in collisions at RHIC and the LHC may be described by saturated gluon matter
 
-## The Electron-Ion Collider
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="https://www.bnl.gov/today/body_pics/2020/02/eic-hr.jpg" alt="Electron-Ion Collider" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;"><em>The Electron-Ion Collider at Brookhaven National Laboratory (Image: BNL)</em></p>
-</div>
-
-The **Electron-Ion Collider (EIC)**, currently under construction at Brookhaven National Laboratory, will be the world's first electron-nucleus collider and a powerful "gluon microscope." By colliding electrons with protons and heavier nuclei at unprecedented energies and luminosities, the EIC will:
-
-- Map the gluon distribution inside protons and nuclei with high precision
-- Search for definitive signatures of gluon saturation
-- Probe the transition region where saturation effects become important
-
-The EIC represents a major opportunity to discover and characterize this exotic state of matter.
-
----
-
 ## Related Topics
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">

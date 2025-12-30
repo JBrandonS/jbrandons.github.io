@@ -21,7 +21,7 @@ Our paper introduces a practical test to determine *when* you can trust Fisher f
 
 ## Why Fisher Forecasting Works (Usually)
 
-Imagine you're trying to measure two quantities—say, the expansion rate of the universe ($H_0$) and the amount of dark matter ($\Omega_m$). Your measurements will have some uncertainty, and typically you'll find that these uncertainties form an **ellipse** when plotted:
+Imagine you're trying to measure two quantities—say, the expansion rate of the universe ($H_0$) and the amount of dark matter ($$\Omega_m$$). Your measurements will have some uncertainty, and typically you'll find that these uncertainties form an **ellipse** when plotted:
 
 <div style="text-align: center; margin: 1.5rem 0;">
   <img src="/assets/imgs/FXCDM_BAO_Exact_Analytic_Fisher_Doublet_partly_filled_plus_curvature.png" alt="Fisher vs DALI contours" style="max-width: 100%; max-height: 400px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -29,9 +29,10 @@ Imagine you're trying to measure two quantities—say, the expansion rate of the
 </div>
 
 The Fisher matrix captures this ellipse perfectly. It tells you:
+
 - How uncertain each parameter is (the width of the ellipse)
 - How parameters are correlated (the tilt of the ellipse)
-- All with just $\mathcal{O}(N)$ calculations for $N$ parameters
+- All with just $$\mathcal{O}(N)$$ calculations for $$N$$ parameters
 
 This efficiency is why Fisher forecasting dominates cosmology. Computing a full forecast might take seconds instead of days.
 
@@ -49,6 +50,7 @@ When the second condition fails, something interesting happens. Instead of nice 
 The measurements still constrain the parameters, but not in the symmetric way Fisher predicts. The Fisher matrix will claim you can measure a parameter equally well in both directions, when in reality one direction is much better constrained than the other.
 
 **Real-world examples where Fisher fails:**
+
 - Weak constraints on cosmological parameters (early universe measurements)
 - Strong parameter degeneracies (when parameters are highly correlated)
 - Highly non-linear models (dark energy equation of state)
@@ -61,9 +63,9 @@ The **Derivative Approximation for LIkelihoods (DALI)** method extends Fisher fo
 
 | Method | What it captures | Computation |
 |--------|-----------------|-------------|
-| **Fisher** | Elliptical (Gaussian) contours only | $\mathcal{O}(N)$ evaluations |
-| **DALI** | Curved, asymmetric "banana" contours | $\mathcal{O}(N^2)$ evaluations |
-| **Full MCMC** | Exact contours of any shape | $\mathcal{O}(10^5 - 10^6)$ evaluations |
+| **Fisher** | Elliptical (Gaussian) contours only | $$\mathcal{O}(N)$$ evaluations |
+| **DALI** | Curved, asymmetric "banana" contours | $$\mathcal{O}(N^2)$$ evaluations |
+| **Full MCMC** | Exact contours of any shape | $$\mathcal{O}(10^5 - 10^6)$$ evaluations |
 
 DALI introduces two additional tensors beyond the Fisher matrix:
 
@@ -71,7 +73,7 @@ $$G_{\alpha\beta\gamma} = \mu_{,\alpha\beta} M \mu_{,\gamma}$$
 
 $$H_{\alpha\beta\gamma\delta} = \mu_{,\alpha\beta} M \mu_{,\gamma\delta}$$
 
-These capture how the observables $\mu$ curve with respect to the parameters, allowing DALI to detect non-Gaussian features that Fisher misses entirely.
+These capture how the observables $$\mu$$ curve with respect to the parameters, allowing DALI to detect non-Gaussian features that Fisher misses entirely.
 
 ---
 
@@ -89,6 +91,7 @@ Our paper provides a simple diagnostic:
 This test requires only the modest additional computation of DALI (not a full MCMC), making it practical to run alongside any Fisher forecast as a sanity check.
 
 We validated this approach using:
+
 - **Expansion history data** (BAO, cosmic chronometers, quasars)
 - **CMB power spectra** (simulated Simons Observatory and CMB-S4)
 - **Primordial abundances** (Big Bang nucleosynthesis measurements)
@@ -108,19 +111,40 @@ In each case, when our test flagged potential problems, comparison with exact MC
 
 ## Publication Details
 
-<div style="background: rgba(126, 211, 216, 0.1); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
+<div style="background: linear-gradient(135deg, rgba(126, 211, 216, 0.08) 0%, rgba(26, 26, 46, 0.05) 100%); border: 1px solid rgba(126, 211, 216, 0.3); border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
-**Title:** Beyond Fisher Forecasting for Cosmology
+<h3 style="margin: 0 0 1.5rem 0; color: #7ed3d8; font-size: 1.3rem; border-bottom: 2px solid rgba(126, 211, 216, 0.3); padding-bottom: 0.75rem;">
+  <i class="fas fa-file-alt" style="margin-right: 0.5rem;"></i> Beyond Fisher Forecasting for Cosmology
+</h3>
 
-**Authors:** Joseph Ryan, Brandon Stevenson, Cynthia Trendafilova, and Joel Meyers
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
 
-**Affiliation:** Department of Physics, Southern Methodist University, Dallas, Texas
+<div>
+  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Authors</p>
+  <p style="margin: 0; font-size: 1rem;">Joseph Ryan, <strong>Brandon Stevenson</strong>, Cynthia Trendafilova, Joel Meyers</p>
+</div>
 
-**Journal:** Physical Review D **107**, 103506 (2023)
+<div>
+  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Institution</p>
+  <p style="margin: 0; font-size: 1rem;">Southern Methodist University</p>
+</div>
 
-**Published:** May 8, 2023
+<div>
+  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Journal</p>
+  <p style="margin: 0; font-size: 1rem;">Physical Review D <strong>107</strong>, 103506</p>
+</div>
 
-**DOI:** [10.1103/PhysRevD.107.103506](https://doi.org/10.1103/PhysRevD.107.103506)
+<div>
+  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Published</p>
+  <p style="margin: 0; font-size: 1rem;">May 8, 2023</p>
+</div>
+
+</div>
+
+<div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(126, 211, 216, 0.2);">
+  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">DOI</p>
+  <a href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" style="color: #7ed3d8; font-family: monospace; font-size: 0.95rem;">10.1103/PhysRevD.107.103506 <i class="fas fa-external-link-alt" style="font-size: 0.75rem; margin-left: 0.3rem;"></i></a>
+</div>
 
 </div>
 
@@ -129,10 +153,9 @@ In each case, when our test flagged potential problems, comparison with exact MC
 ## Related Links
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-book"></i> View Paper (Phys. Rev. D)</a>
+  <a href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-book"></i> Paper (Phys. Rev. D)</a>
   <a href="/assets/pdfs/dali.pdf" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-pdf"></i> Download PDF</a>
   <a href="https://github.com/JBrandonS/DALI" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fab fa-github"></i> GitHub Repository</a>
-  <a href="/publications" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-lines"></i> All Publications</a>
 </div>
 
 ---
@@ -140,4 +163,3 @@ In each case, when our test flagged potential problems, comparison with exact MC
 <div style="text-align: center; margin-top: 3rem;">
   <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-block;">← Back to Publications</a>
 </div>
-
