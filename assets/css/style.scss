@@ -64,6 +64,7 @@
     margin: 2rem auto;
     padding: 2rem 2rem 1.5rem;
     position: relative;
+    z-index: 1;
     background: linear-gradient(135deg, rgba(126, 211, 216, 0.05) 0%, rgba(26, 26, 46, 0.03) 100%);
     border-left: 4px solid var(--secondary-color);
     border-right: 4px solid var(--secondary-color);
@@ -77,6 +78,7 @@
         opacity: 0.5;
         position: absolute;
         line-height: 1;
+        z-index: 0;
     }
 
     &::before {
@@ -668,7 +670,7 @@ a {
     position: absolute;
     top: calc(100% + 0.5rem);
     left: 0;
-    background: rgba(26, 26, 46, 0.95);
+    background: #1a1a2e;
     border: 1px solid rgba(126, 211, 216, 0.6);
     border-radius: 4px;
     min-width: 200px;
@@ -679,9 +681,8 @@ a {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-    backdrop-filter: blur(8px);
+    z-index: 9999;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
 .nav-dropdown:hover .nav-dropdown-menu {

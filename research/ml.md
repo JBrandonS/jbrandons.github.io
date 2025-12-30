@@ -36,7 +36,7 @@ One of my research areas uses machine learning to study the **Cosmic Microwave B
 The challenge? We're looking for incredibly faint signals called **Primordial Non-Gaussianity (PNG)**—subtle deviations from randomness that could reveal what powered cosmic inflation. It's like trying to hear a whisper at a rock concert. Neural networks trained on simulated CMB data can learn to pick out these whispers far better than traditional statistical methods.
 
 <div style="background: rgba(126, 211, 216, 0.1); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
-  <strong style="color: #7ed3d8;">Learn more:</strong> Explore the physics of the early universe and primordial non-Gaussianity on my <a href="png" style="color: #7ed3d8;">PNG research page</a>.
+  <strong style="color: #7ed3d8;">Learn more:</strong> Explore the physics of the early universe and primordial non-Gaussianity on my <a href="/research/png" style="color: #7ed3d8;">PNG research page</a>.
 </div>
 
 ---
@@ -53,7 +53,7 @@ My other research focus uses machine learning to understand what happens inside 
 Inside each proton is a sea of quarks and gluons—and at high energies, gluons multiply until they reach a crowded state called **gluon saturation**. Understanding this phenomenon requires analyzing complex scattering data with many variables. Neural networks excel here: they can learn the relationships between collision parameters and predict outcomes that help us map the proton's internal landscape.
 
 <div style="background: rgba(126, 211, 216, 0.1); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
-  <strong style="color: #7ed3d8;">Learn more:</strong> Dive into the physics of proton structure and gluon saturation on my <a href="dis" style="color: #7ed3d8;">DIS research page</a>.
+  <strong style="color: #7ed3d8;">Learn more:</strong> Dive into the physics of proton structure and gluon saturation on my <a href="/research/dis" style="color: #7ed3d8;">DIS research page</a>.
 </div>
 
 ---
