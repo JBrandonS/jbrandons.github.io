@@ -15,6 +15,20 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
+# Setting `exclude` REPLACES Jekyll's defaults rather than adding to them,
+# so the stock entries are restated below. The additions are repo metadata
+# that has no business being published:
+#   notebooks/  - source for the header images (see notebooks/plots.ipynb), was
+#                 shipping as a 15 KB download at /notebooks/plots.ipynb
+#   README.md   - repo documentation, was being served at /README.md
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - notebooks/
+  - README.md
+
 # Sass: keep the build log quiet.
 # quiet_deps silences deprecations raised inside dependencies — here, the Cayman
 # theme's own SCSS (its @imports and its global invert() calls).
