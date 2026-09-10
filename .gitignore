@@ -5,4 +5,5 @@ _site/
 .history/
 vendor/
 .bundle/
+.pi/
 Gemfile.lock
