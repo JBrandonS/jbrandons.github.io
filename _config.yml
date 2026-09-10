@@ -6,7 +6,7 @@ description: >-
   and data analysis.
 language: en
 baseurl: ""
-url: "https://jbrandons.github.io"
+url: "https://jbrandons.dev"
 
 # Build settings
 remote_theme: pages-themes/cayman@v0.2.0
