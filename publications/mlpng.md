@@ -9,7 +9,7 @@ title: Primordial Non-Gaussianity
 
 ---
 
-<div style="background: rgba(126, 211, 216, 0.15); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
+<div class="callout callout--accent">
   <strong><i class="fas fa-hourglass-half"></i> Paper in Preparation</strong><br>
   This research is ongoing. A publication is currently in the works.
 </div>
@@ -18,10 +18,10 @@ title: Primordial Non-Gaussianity
 
 The Cosmic Microwave Background (CMB)—light from when the universe was just 380,000 years old—contains subtle clues about what happened during **inflation**, the ultra-rapid expansion in the first fraction of a second after the Big Bang. One of the most important clues is **primordial non-Gaussianity (PNG)**: tiny deviations from perfectly random fluctuations that would reveal the physics of inflation.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/WMAP_2012.png/1280px-WMAP_2012.png" alt="All-sky map of the Cosmic Microwave Background showing temperature fluctuations" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;"><em>The Cosmic Microwave Background from WMAP. Hidden within these temperature fluctuations may be signatures of primordial non-Gaussianity. (Credit: NASA/WMAP)</em></p>
-</div>
+<figure class="figure figure--muted">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/WMAP_2012.png/1280px-WMAP_2012.png" alt="All-sky map of the Cosmic Microwave Background showing temperature fluctuations">
+  <figcaption><em>The Cosmic Microwave Background from WMAP. Hidden within these temperature fluctuations may be signatures of primordial non-Gaussianity. (Credit: NASA/WMAP)</em></figcaption>
+</figure>
 
 The problem? These PNG signals are incredibly weak. Current observations show the CMB is *almost* perfectly Gaussian—any non-Gaussian signal is buried under noise and foreground contamination. Traditional statistical methods have pushed detection limits significantly, but they may not be optimal for extracting every last bit of information from the data.
 
@@ -94,7 +94,7 @@ Once trained, a neural network can analyze a CMB map in seconds—far faster tha
 
 Machine learning isn't a magic solution. Key challenges include:
 
-<div style="background: rgba(255, 200, 100, 0.15); border-left: 4px solid #ffc864; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
+<div class="callout callout--warning">
   <strong>The Simulation Gap</strong><br>
   Neural networks learn from simulations, but real data may differ in subtle ways. Ensuring the network generalizes to real observations requires careful validation and understanding of systematic effects.
 </div>
@@ -122,14 +122,14 @@ The ultimate goal is to extract every possible bit of information about the earl
 
 ## Related Topics
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="/research/png" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-star"></i> The Early Universe</a>
-  <a href="/research/ml" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-brain"></i> Machine Learning in Physics</a>
-  <a href="https://github.com/JBrandonS/MLPNG" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fab fa-github"></i> GitHub Repository</a>
+<div class="pill-row">
+  <a class="pill" href="{{ '/research/png' | relative_url }}"><i class="fas fa-star"></i> The Early Universe</a>
+  <a class="pill" href="{{ '/research/ml' | relative_url }}"><i class="fas fa-brain"></i> Machine Learning in Physics</a>
+  <a class="pill" href="https://github.com/JBrandonS/MLPNG" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub Repository</a>
 </div>
 
 ---
 
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-block;">← Back to Publications</a>
+<div class="page-back">
+  <a class="pill pill--lg" href="{{ '/publications' | relative_url }}">← Back to Publications</a>
 </div>

@@ -2,7 +2,8 @@
 title: Brandon Stevenson
 email: your.email@example.com
 description: >-
-  Physicist and Software Developer specializing in machine learning and data analysis.
+  Physicist and Software Developer specializing in machine learning
+  and data analysis.
 language: en
 baseurl: ""
 url: "https://jbrandons.github.io"
@@ -13,6 +14,17 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+
+# Sass: keep the build log quiet.
+# quiet_deps silences deprecations raised inside dependencies — here, the Cayman
+# theme's own SCSS (its @imports and its global invert() calls).
+# silence_deprecations then covers `@import "{{ site.theme }}"` in
+# assets/css/style.scss, which is unavoidable while using remote_theme.
+# Remove both once the theme migrates to @use / color.invert().
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
 
 # Social media usernames (optional)
 github_username: JBrandonS

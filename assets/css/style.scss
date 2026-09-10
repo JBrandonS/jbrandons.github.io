@@ -16,6 +16,44 @@
     --shadow-hover: 0 4px 16px rgba(26, 26, 46, 0.25);
 }
 
+/*
+ * Sticky footer.
+ * The Cayman theme leaves <body> in normal flow, so on a tall viewport with a
+ * short page the dark footer ends where the content ends and the white body
+ * background shows underneath it. Making the body a full-height column and
+ * letting the content grow pushes the footer to the bottom of the viewport.
+ */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 2rem 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: var(--secondary-color);
+    }
+}
+
 
 /* Featured Quote */
 .featured-quote {
@@ -130,34 +168,30 @@
     }
 }
 
-/* Research Columns */
+/* Research Grid & Cards
+ * (previously defined twice in this file with conflicting values; these are the
+ *  values that actually won the cascade, merged into a single definition) */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
-
-    @media screen and (max-width: 900px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media screen and (max-width: 600px) {
-        grid-template-columns: 1fr;
-    }
 }
 
 .research-card {
-    background: var(--background-light);
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
         transform: translateY(-5px);
         box-shadow: var(--shadow-hover);
+        border-color: var(--accent-color);
     }
 
     img {
@@ -170,16 +204,15 @@
 
     h3 {
         color: var(--primary-color);
-        font-size: 1.25rem;
-        margin: 0 0 0.75rem 0;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     p {
         color: var(--text-light);
         font-size: 0.95rem;
         line-height: 1.6;
-        flex-grow: 1;
-        margin: 0 0 1rem 0;
+        margin-bottom: 1.5rem;
     }
 
     a {
@@ -227,8 +260,10 @@
         
         img {
             width: 100%;
+            aspect-ratio: 4 / 3;
             max-height: 280px;
             object-fit: contain;
+            background: rgba(26, 26, 46, 0.04);
             border-radius: 4px;
         }
     }
@@ -595,10 +630,26 @@ a {
     }
 }
 
+/* Content headings
+ * Cayman paints every content heading its own green (#159957); use the site
+ * palette so headings match the cards and page chrome. */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    color: var(--primary-color);
+}
+
 /* Dropdown Navigation */
 .nav-dropdown {
     position: relative;
     display: inline-block;
+    border: 1px solid var(--nav-border);
+    border-radius: 4px;
+    background: var(--nav-bg);
+    backdrop-filter: blur(var(--nav-blur));
 }
 
 .nav-dropdown-toggle {
@@ -608,6 +659,10 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #7ed3d8;
+    padding: var(--nav-pill-padding);
+    transition: all 0.3s;
+    font-size: var(--nav-pill-font-size);
+    font-weight: 500;
     
     &::after {
         content: ' ▼';
@@ -647,7 +702,10 @@ a {
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+/* Opens on hover for mouse users and on focus for keyboard users, so the
+ * sub-pages are reachable without a pointer. */
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -679,6 +737,361 @@ a {
     .nav-dropdown-menu {
         min-width: 180px;
     }
+}
+
+/* ==================================================================
+   Page chrome — used by _layouts/home.html and _layouts/default.html
+   ================================================================== */
+.site-header {
+    /* Nav pills pick their look up from these, so the two header variants
+       (compact inner-page bar / home page hero) only override the variables. */
+    --nav-border: rgba(126, 211, 216, 0.5);
+    --nav-bg: rgba(26, 26, 46, 0.5);
+    --nav-blur: 4px;
+    --nav-pill-padding: 0.5rem 1rem;
+    --nav-pill-font-size: 0.85rem;
+    --nav-icon-padding: 0.5rem 0.75rem;
+    --nav-icon-font-size: 0.95rem;
+
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background:
+        linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.5)),
+        url("/assets/imgs/cmb_header_small.png") left center/cover no-repeat,
+        var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.site-header--hero {
+    --nav-border: rgba(126, 211, 216, 0.6);
+    --nav-bg: rgba(26, 26, 46, 0.6);
+    --nav-blur: 8px;
+    --nav-pill-padding: 0.6rem 1.5rem;
+    --nav-pill-font-size: 0.95rem;
+    --nav-icon-padding: 0.6rem 1rem;
+    --nav-icon-font-size: 1.1rem;
+
+    display: block;
+    padding: 4rem 2rem;
+    text-align: center;
+    background:
+        linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.4)),
+        url("/assets/imgs/cmb_header.png") center/cover no-repeat,
+        var(--primary-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.site-title-link {
+    text-decoration: none;
+}
+
+.site-title {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+}
+
+.site-header--hero .site-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 30px rgba(126, 211, 216, 0.3);
+}
+
+.site-tagline {
+    max-width: 600px;
+    margin: 1.5rem auto 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.site-nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.site-header--hero .site-nav {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: var(--nav-pill-padding);
+    border: 1px solid var(--nav-border);
+    border-radius: 4px;
+    background: var(--nav-bg);
+    backdrop-filter: blur(var(--nav-blur));
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: var(--nav-pill-font-size);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.nav-pill--icon {
+    padding: var(--nav-icon-padding);
+    font-size: var(--nav-icon-font-size);
+}
+
+/* Keyboard-visible focus everywhere, plus a skip link for the nav. */
+a:focus-visible,
+.nav-dropdown-toggle:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 200;
+    padding: 0.75rem 1.25rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* ==================================================================
+   Content blocks — shared by the markdown pages
+   ================================================================== */
+
+/* Row of outlined link buttons, e.g. "Related Topics". */
+.pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.pill--sm {
+    padding: 0.4rem 1rem;
+}
+
+.pill--lg {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+}
+
+/* Centered "back to ..." link at the foot of a page. */
+.page-back {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* Figure with caption. */
+.figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Prefixed with .main-content for the same specificity reason as .portrait above:
+ * `.main-content img` is (0,1,1), so these must not merely tie with it and hope
+ * to come later in the cascade. */
+.main-content .figure img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-content .figure figcaption {
+    margin-top: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.figure--tight {
+    margin: 1.5rem 0;
+}
+
+.main-content .figure--narrow img {
+    max-width: 350px;
+}
+
+.main-content .figure--framed img {
+    max-height: 400px;
+}
+
+.figure--muted figcaption {
+    color: #666;
+}
+
+/* Callout box. The accent colour is a variable so variants only restate it. */
+.callout {
+    --callout-accent: var(--secondary-color);
+
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: rgba(126, 211, 216, 0.1);
+    border-left: 4px solid var(--callout-accent);
+    border-radius: 0 8px 8px 0;
+}
+
+.callout--accent {
+    background: rgba(126, 211, 216, 0.15);
+}
+
+.callout--success {
+    --callout-accent: var(--accent-color);
+
+    background: rgba(77, 201, 139, 0.15);
+}
+
+.callout--warning {
+    --callout-accent: #ffc864;
+
+    background: rgba(255, 200, 100, 0.15);
+}
+
+.callout-title {
+    color: var(--secondary-color);
+}
+
+/* Links sit on the tinted callout background, where the default green is hard
+ * to read; keep them on the secondary palette colour instead. */
+.callout a {
+    color: var(--secondary-color);
+}
+
+.callout a:hover {
+    color: var(--primary-color);
+}
+
+/* Two-column text + image layout. */
+.split {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.split--center {
+    align-items: center;
+}
+
+.split__body {
+    flex: 1;
+    min-width: 300px;
+}
+
+.split__aside {
+    flex: 0 0 auto;
+}
+
+.split__aside--center {
+    text-align: center;
+}
+
+.split__stack {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* The theme ships `.main-content img { max-width: 100% }` at specificity (0,1,1),
+ * which outranks a bare class. These had been inline styles, so they used to win
+ * by default; they need the extra `.main-content` to keep constraining the image
+ * instead of letting it fill the flex column at natural width. */
+.main-content .portrait {
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-content .portrait--lg {
+    max-width: 300px;
+}
+
+/* Publication metadata card. */
+.pub-details {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(126, 211, 216, 0.08) 0%, rgba(26, 26, 46, 0.05) 100%);
+    border: 1px solid rgba(126, 211, 216, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra specificity so the theme's .main-content h3 / p rules do not win. */
+.main-content .pub-details__title {
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(126, 211, 216, 0.3);
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+.pub-details__title i {
+    margin-right: 0.5rem;
+}
+
+.pub-details__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.main-content .meta-label {
+    margin: 0 0 0.3rem 0;
+    color: #888;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.main-content .meta-value {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.pub-details__footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(126, 211, 216, 0.2);
+}
+
+.doi-link {
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.doi-link i {
+    margin-left: 0.3rem;
+    font-size: 0.75rem;
 }
 
 /* Smooth scrolling */

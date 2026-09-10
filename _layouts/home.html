@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +7,50 @@
 
     {% seo %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
     <!-- Big nav section for home page with CMB background -->
-    <div style="background: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.4)), url('{{ "/assets/imgs/cmb_header.png" | relative_url }}') center/cover no-repeat, #1a1a2e; width: 100%; padding: 4rem 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.4); position: relative; z-index: 100;">
-      <h1 style="margin: 0; color: #7ed3d8; font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 8px rgba(0,0,0,0.9), 0 0 30px rgba(126, 211, 216, 0.3); letter-spacing: 1px;">{{ site.title | default: site.github.repository_name }}</h1>
-      <p style="margin: 1.5rem 0 2.5rem 0; color: rgba(255, 255, 255, 0.9); font-size: 1.25rem; font-weight: 300; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); max-width: 600px; margin-left: auto; margin-right: auto;">{{ site.description | default: site.github.project_tagline }}</p>
-      
-      <nav style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-        <a href="{{ "/" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">Home</a>
-        <a href="{{ "/about" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">About</a>
-        
-        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
-          <a href="{{ "/research" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.6rem 1.5rem; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; display: inline-flex;">Research</a>
+    <header class="site-header site-header--hero">
+      <h1 class="site-title">{{ site.title | default: site.github.repository_name }}</h1>
+      <p class="site-tagline">{{ site.description | default: site.github.project_tagline }}</p>
+
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-pill" href="{{ '/' | relative_url }}">Home</a>
+        <a class="nav-pill" href="{{ '/about' | relative_url }}">About</a>
+
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="{{ '/research' | relative_url }}" aria-haspopup="true">Research</a>
           <ul class="nav-dropdown-menu">
-            <li><a href="{{ "/research/ml" | relative_url }}">Machine Learning in Physics</a></li>
-            <li><a href="{{ "/research/png" | relative_url }}">The Early Universe</a></li>
-            <li><a href="{{ "/research/dis" | relative_url }}">Deep Inelastic Scattering</a></li>
+            <li><a href="{{ '/research/ml' | relative_url }}">Machine Learning in Physics</a></li>
+            <li><a href="{{ '/research/png' | relative_url }}">The Early Universe</a></li>
+            <li><a href="{{ '/research/dis' | relative_url }}">Deep Inelastic Scattering</a></li>
           </ul>
         </div>
 
-        <div class="nav-dropdown" style="display: inline-block; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);">
-          <a href="{{ "/publications" | relative_url }}" class="nav-dropdown-toggle" style="padding: 0.6rem 1.5rem; transition: all 0.3s; font-size: 0.95rem; font-weight: 500; display: inline-flex;">Publications</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-toggle" href="{{ '/publications' | relative_url }}" aria-haspopup="true">Publications</a>
           <ul class="nav-dropdown-menu">
-            <li><a href="{{ "/publications/dali" | relative_url }}">Beyond Fisher Forecasting</a></li>
-            <li><a href="{{ "/publications/mlpng" | relative_url }}">Primordial Non-Gaussianity</a></li>
-            <li><a href="{{ "/publications/gs" | relative_url }}">Gluon Saturation</a></li>
+            <li><a href="{{ '/publications/dali' | relative_url }}">Beyond Fisher Forecasting</a></li>
+            <li><a href="{{ '/publications/mlpng' | relative_url }}">Primordial Non-Gaussianity</a></li>
+            <li><a href="{{ '/publications/gs' | relative_url }}">Gluon Saturation</a></li>
           </ul>
         </div>
 
-        <a href="{{ site.github.owner_url }}" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/JBrandonS" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1rem; border: 1px solid rgba(126, 211, 216, 0.6); border-radius: 4px; transition: all 0.3s; font-size: 1.1rem; background: rgba(26, 26, 46, 0.6); backdrop-filter: blur(8px);"><i class="fab fa-linkedin"></i></a>
+        <a class="nav-pill nav-pill--icon" href="{{ site.github.owner_url }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a class="nav-pill nav-pill--icon" href="https://linkedin.com/in/JBrandonS" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </nav>
-    </div>
+    </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
 
-    <footer style="width: 100%; margin-top: 0; padding: 2rem 0; background: #1a1a2e; text-align: center; color: #7ed3d8;">
-      <p style="margin: 0;">&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: site.github.repository_name }}. All rights reserved.</p>
+    <footer class="page-footer">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title | default: site.github.repository_name }}. All rights reserved.</p>
     </footer>
   </body>
 </html>

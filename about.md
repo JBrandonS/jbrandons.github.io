@@ -1,10 +1,15 @@
+---
+layout: default
+title: About
+---
+
 <div class="featured-quote">
   <p>Somewhere, something incredible is waiting to be known.</p>
   <cite>Carl Sagan</cite>
 </div>
 
-<div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px;">
+<div class="split split--center">
+  <div class="split__body">
     <h1>About Me</h1>
     <p>Born and raised in Dallas, TX, I have always been fascinated by technology and science. From a young age, I found myself taking apart every TV, washing machine, remote-controlled car, and electronic device I could get my hands on to understand how they worked. This curiosity led me to teach myself programming at the age of 12 and, eventually, while writing a physics engine for a game I wanted to create, I developed a love for understanding how the world operates.</p>
 
@@ -16,8 +21,8 @@
 
     <p>Recently having graduated, I am eager to continue my journey of discovery, combining my passion for technology and understanding to whatever path life may take me. I hope to never stop learning.</p>
   </div>
-  <div style="flex: 0 0 auto; text-align: center;">
-    <img src="{{ '/assets/imgs/port.jpg' | relative_url }}" alt="Brandon" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div class="split__aside split__aside--center">
+    <img class="portrait portrait--lg" src="{{ '/assets/imgs/port.jpg' | relative_url }}" alt="Brandon">
     <div class="social-links">
       <a href="{{ '/assets/pdfs/resume.pdf' | relative_url }}" target="_blank" class="cv"><i class="fas fa-file-pdf"></i> Resume</a>
       <a href="https://scholar.google.com/citations?user=j.brandon.s" target="_blank" class="scholar"><i class="fas fa-graduation-cap"></i> Scholar</a>

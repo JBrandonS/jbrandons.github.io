@@ -23,10 +23,10 @@ Our paper introduces a practical test to determine *when* you can trust Fisher f
 
 Imagine you're trying to measure two quantities—say, the expansion rate of the universe ($$H_0$$) and the amount of dark matter ($$\Omega_m$$). Your measurements will have some uncertainty, and typically you'll find that these uncertainties form an **ellipse** when plotted:
 
-<div style="text-align: center; margin: 1.5rem 0;">
-  <img src="/assets/imgs/FXCDM_BAO_Exact_Analytic_Fisher_Doublet_partly_filled_plus_curvature.png" alt="Fisher vs DALI contours" style="max-width: 100%; max-height: 400px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;"><em>Comparison of Fisher (purple), DALI (green), and exact (orange) likelihood contours</em></p>
-</div>
+<figure class="figure figure--tight figure--framed figure--muted">
+  <img src="/assets/imgs/FXCDM_BAO_Exact_Analytic_Fisher_Doublet_partly_filled_plus_curvature.png" alt="Fisher vs DALI contours">
+  <figcaption><em>Comparison of Fisher (purple), DALI (green), and exact (orange) likelihood contours</em></figcaption>
+</figure>
 
 The Fisher matrix captures this ellipse perfectly. It tells you:
 
@@ -83,7 +83,7 @@ Here's the practical problem: **Fisher forecasting doesn't tell you when it's wr
 
 Our paper provides a simple diagnostic:
 
-<div style="background: rgba(77, 201, 139, 0.15); border-left: 4px solid #4dc98b; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
+<div class="callout callout--success">
   <strong>The Cross-Section Test</strong><br>
   Compare 2D slices of Fisher and DALI likelihood surfaces. If the DALI contours show <strong>concavity</strong> (curved inward like a banana), Fisher is likely failing. If they match, Fisher is probably reliable.
 </div>
@@ -111,39 +111,39 @@ In each case, when our test flagged potential problems, comparison with exact MC
 
 ## Publication Details
 
-<div style="background: linear-gradient(135deg, rgba(126, 211, 216, 0.08) 0%, rgba(26, 26, 46, 0.05) 100%); border: 1px solid rgba(126, 211, 216, 0.3); border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+<div class="pub-details">
 
-<h3 style="margin: 0 0 1.5rem 0; color: #7ed3d8; font-size: 1.3rem; border-bottom: 2px solid rgba(126, 211, 216, 0.3); padding-bottom: 0.75rem;">
-  <i class="fas fa-file-alt" style="margin-right: 0.5rem;"></i> Beyond Fisher Forecasting for Cosmology
+<h3 class="pub-details__title">
+  <i class="fas fa-file-alt"></i> Beyond Fisher Forecasting for Cosmology
 </h3>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+<div class="pub-details__grid">
 
 <div>
-  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Authors</p>
-  <p style="margin: 0; font-size: 1rem;">Joseph Ryan, <strong>Brandon Stevenson</strong>, Cynthia Trendafilova, Joel Meyers</p>
-</div>
-
-<div>
-  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Institution</p>
-  <p style="margin: 0; font-size: 1rem;">Southern Methodist University</p>
+  <p class="meta-label">Authors</p>
+  <p class="meta-value">Joseph Ryan, <strong>Brandon Stevenson</strong>, Cynthia Trendafilova, Joel Meyers</p>
 </div>
 
 <div>
-  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Journal</p>
-  <p style="margin: 0; font-size: 1rem;">Physical Review D <strong>107</strong>, 103506</p>
+  <p class="meta-label">Institution</p>
+  <p class="meta-value">Southern Methodist University</p>
 </div>
 
 <div>
-  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">Published</p>
-  <p style="margin: 0; font-size: 1rem;">May 8, 2023</p>
+  <p class="meta-label">Journal</p>
+  <p class="meta-value">Physical Review D <strong>107</strong>, 103506</p>
+</div>
+
+<div>
+  <p class="meta-label">Published</p>
+  <p class="meta-value">May 8, 2023</p>
 </div>
 
 </div>
 
-<div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(126, 211, 216, 0.2);">
-  <p style="margin: 0 0 0.3rem 0; font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px;">DOI</p>
-  <a href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" style="color: #7ed3d8; font-family: monospace; font-size: 0.95rem;">10.1103/PhysRevD.107.103506 <i class="fas fa-external-link-alt" style="font-size: 0.75rem; margin-left: 0.3rem;"></i></a>
+<div class="pub-details__footer">
+  <p class="meta-label">DOI</p>
+  <a class="doi-link" href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" rel="noopener">10.1103/PhysRevD.107.103506 <i class="fas fa-external-link-alt"></i></a>
 </div>
 
 </div>
@@ -152,14 +152,14 @@ In each case, when our test flagged potential problems, comparison with exact MC
 
 ## Related Links
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-book"></i> Paper (Phys. Rev. D)</a>
-  <a href="/assets/pdfs/dali.pdf" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-pdf"></i> Download PDF</a>
-  <a href="https://github.com/JBrandonS/DALI" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fab fa-github"></i> GitHub Repository</a>
+<div class="pill-row">
+  <a class="pill" href="https://doi.org/10.1103/PhysRevD.107.103506" target="_blank" rel="noopener"><i class="fas fa-book"></i> Paper (Phys. Rev. D)</a>
+  <a class="pill" href="/assets/pdfs/dali.pdf"><i class="fas fa-file-pdf"></i> Download PDF</a>
+  <a class="pill" href="https://github.com/JBrandonS/DALI" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub Repository</a>
 </div>
 
 ---
 
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-block;">← Back to Publications</a>
+<div class="page-back">
+  <a class="pill pill--lg" href="{{ '/publications' | relative_url }}">← Back to Publications</a>
 </div>

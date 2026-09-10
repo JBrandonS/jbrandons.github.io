@@ -17,10 +17,10 @@ You can't use a regular microscope to look inside a proton—visible light is fa
 
 Think of it like throwing a ball into a dark room to figure out what's inside. If the ball bounces straight back, you hit something solid. If it scatters at weird angles, maybe you hit something with complex structure. By carefully measuring how electrons scatter off protons, we can map out what's going on inside.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/DIS.svg" alt="Diagram showing deep inelastic scattering where an electron exchanges a virtual photon with a quark inside a proton" style="max-width: 350px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <p style="color: #888; font-size: 0.9rem; margin-top: 0.5rem;">Deep inelastic scattering: an electron probes the inside of a proton by exchanging a virtual photon. Credit: Wikimedia Commons</p>
-</div>
+<figure class="figure figure--narrow">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/DIS.svg" alt="Diagram showing deep inelastic scattering where an electron exchanges a virtual photon with a quark inside a proton">
+  <figcaption>Deep inelastic scattering: an electron probes the inside of a proton by exchanging a virtual photon. Credit: Wikimedia Commons</figcaption>
+</figure>
 
 The "deep" in Deep Inelastic Scattering means we're probing deep inside the proton. The "inelastic" means the proton doesn't stay intact—it breaks apart, revealing its inner contents.
 
@@ -32,8 +32,8 @@ For a long time, scientists thought protons were fundamental—tiny, solid balls
 
 But here's where it gets strange. The deeper you look, the weirder it gets. At low energies, a proton looks like three quarks bound together. But when you probe at higher energies, you start seeing a sea of gluons—and there seem to be more and more of them the harder you look.
 
-<div style="background: rgba(126, 211, 216, 0.1); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
-  <strong style="color: #7ed3d8;">The Color Dipole Picture</strong><br>
+<div class="callout">
+  <strong class="callout-title">The Color Dipole Picture</strong><br>
   One way to understand DIS is through the "color dipole" framework. When a high-energy electron approaches a proton, it sends out a virtual photon that briefly transforms into a quark-antiquark pair—a "dipole." This dipole then interacts with the gluons inside the proton, like a tiny probe sampling the proton's internal structure.
 </div>
 
@@ -45,10 +45,10 @@ Imagine packing more and more people into a room. Eventually, you can't fit anyo
 
 As we probe at higher and higher energies, we see more and more gluons. But there's a limit. At some point, gluons start overlapping and interacting with each other so strongly that their growth slows down. This phenomenon is called **gluon saturation**, and it represents a completely new state of matter sometimes called the **Color Glass Condensate**.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="https://www.bnl.gov/today/body_pics/2022/08/gluons-saturate-hr.jpg" alt="Illustration showing gluons saturating inside a nucleus accelerated to high energy" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <p style="color: #888; font-size: 0.9rem; margin-top: 0.5rem;">At high energies, gluons inside nuclei begin to overlap and recombine, reaching a saturated state. Credit: Brookhaven National Laboratory</p>
-</div>
+<figure class="figure">
+  <img src="https://www.bnl.gov/today/body_pics/2022/08/gluons-saturate-hr.jpg" alt="Illustration showing gluons saturating inside a nucleus accelerated to high energy">
+  <figcaption>At high energies, gluons inside nuclei begin to overlap and recombine, reaching a saturated state. Credit: Brookhaven National Laboratory</figcaption>
+</figure>
 
 We've seen hints of gluon saturation in experiments, but we've never been able to study it directly. That's about to change.
 
@@ -77,6 +77,6 @@ DIS gave us quarks. The EIC might give us something even more surprising.
 
 ---
 
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ "/research" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-block;">← Back to Research</a>
+<div class="page-back">
+  <a class="pill pill--lg" href="{{ '/research' | relative_url }}">← Back to Research</a>
 </div>

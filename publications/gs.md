@@ -9,11 +9,6 @@ title: Gluon Saturation
 
 ---
 
-<div style="background: rgba(126, 211, 216, 0.15); border-left: 4px solid #7ed3d8; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
-  <strong><i class="fas fa-hourglass-half"></i> Paper in Preparation</strong><br>
-  Research on this topic is ongoing. A publication is currently in the works.
-</div>
-
 ## What is Gluon Saturation?
 
 Protons aren't just simple particles—they're dynamic systems held together by **gluons**, the carriers of the strong force. When we probe a proton at high energies (equivalently, looking at very small distance scales), something remarkable happens: we see more and more gluons.
@@ -30,6 +25,16 @@ The theoretical framework that describes this saturated state is called the **Co
 
 The CGC predicts that at saturation, gluons behave collectively rather than independently—a qualitatively different regime from the well-understood perturbative QCD that describes high-energy particle physics.
 
+---
+
+## Machine Learning the Dipole Amplitude
+
+To compare saturation theory against data, one has to evolve the dipole scattering amplitude $$N(\eta, r)$$ with nonlinear QCD evolution equations (BK/rcBK) again and again—once for every point in parameter space that a global fit explores. That evolution sits in the innermost loop of the analysis and dominates the cost.
+
+In this work, part of the **Saturated Glue (SURGE)** collaboration program, we train a machine learning surrogate on numerical solutions of the evolution equations and use it in place of the solver during fitting. The surrogate reproduces the evolved amplitude across the kinematically relevant domain at a small fraction of the computational cost, making broad parameter scans and global analyses of DIS and nuclear data practical. Final results and uncertainties are still obtained from the exact evolution in a bounded region around the optimum—surrogate for exploration, solver for precision.
+
+---
+
 ## Why Does This Matter?
 
 Understanding gluon saturation helps us answer fundamental questions:
@@ -38,16 +43,66 @@ Understanding gluon saturation helps us answer fundamental questions:
 2. **QCD in Extreme Conditions**: What happens to the strong force at the highest densities?
 3. **Heavy Ion Collisions**: The initial state in collisions at RHIC and the LHC may be described by saturated gluon matter
 
-## Related Topics
+---
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="/research/dis" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-atom"></i> Deep Inelastic Scattering</a>
-  <a href="/publications" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-file-lines"></i> All Publications</a>
-  <a href="https://www.bnl.gov/eic/" target="_blank" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.2rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-external-link-alt"></i> EIC at BNL</a>
+## Publication Details
+
+<div class="pub-details">
+
+<h3 class="pub-details__title">
+  <i class="fas fa-file-alt"></i> Probing Dense Nuclear Matter at Small-x
+</h3>
+
+<div class="pub-details__grid">
+
+<div>
+  <p class="meta-label">Authors</p>
+  <p class="meta-value">Junaid S. Khan, Rebecca L. Lustberg, Fredrick Olness, Peter Risse, Bjoern Schenke, <strong>Brandon Stevenson</strong></p>
+</div>
+
+<div>
+  <p class="meta-label">Institutions</p>
+  <p class="meta-value">Southern Methodist University, Jefferson Lab, Brookhaven National Laboratory</p>
+</div>
+
+<div>
+  <p class="meta-label">Conference</p>
+  <p class="meta-value">DIS2026 — Bologna, Italy</p>
+</div>
+
+<div>
+  <p class="meta-label">Published</p>
+  <p class="meta-value">August 31, 2026 (arXiv)</p>
+</div>
+
+</div>
+
+<div class="pub-details__footer">
+  <p class="meta-label">DOI</p>
+  <a class="doi-link" href="https://doi.org/10.48550/arXiv.2609.00230" target="_blank" rel="noopener">10.48550/arXiv.2609.00230 <i class="fas fa-external-link-alt"></i></a>
+</div>
+
+</div>
+
+## Related Links
+
+<div class="pill-row">
+  <a class="pill" href="https://arxiv.org/abs/2609.00230" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper (arXiv)</a>
+  <a class="pill" href="{{ '/assets/pdfs/surge.pdf' | relative_url }}"><i class="fas fa-file-pdf"></i> Download PDF</a>
 </div>
 
 ---
 
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ "/publications" | relative_url }}" style="color: #7ed3d8; text-decoration: none; padding: 0.6rem 1.5rem; border: 1px solid #7ed3d8; border-radius: 4px; display: inline-block;">← Back to Publications</a>
+## Related Topics
+
+<div class="pill-row">
+  <a class="pill" href="{{ '/research/dis' | relative_url }}"><i class="fas fa-atom"></i> Deep Inelastic Scattering</a>
+  <a class="pill" href="{{ '/publications' | relative_url }}"><i class="fas fa-file-lines"></i> All Publications</a>
+  <a class="pill" href="https://www.bnl.gov/eic/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> EIC at BNL</a>
+</div>
+
+---
+
+<div class="page-back">
+  <a class="pill pill--lg" href="{{ '/publications' | relative_url }}">← Back to Publications</a>
 </div>
